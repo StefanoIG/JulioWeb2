@@ -1,0 +1,58 @@
+/* Header.css */
+
+/* Establece el estilo general de la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #2C3E50; /* Color de fondo oscuro */
+  color: #ECF0F1; /* Color de texto claro */
+}
+
+/* Estilo para el logo y el título dentro de la barra de navegación */
+.nav-logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Estilo para los enlaces de navegación */
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ECF0F1; /* Color de texto claro */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #3498DB; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}

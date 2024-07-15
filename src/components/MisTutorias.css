@@ -1,0 +1,70 @@
+/* MisTutorias.css */
+
+/* Contenedor principal para las tutorías */
+.mis-tutorias {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Contenido principal de las tutorías */
+.tutorias-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Grid para las tarjetas de tutorías */
+.mis-tutorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+/* Ajuste para mostrar solo 2 tutorías por fila */
+@media (min-width: 768px) {
+  .mis-tutorias-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tarjetas individuales de las tutorías */
+.tutoria-tarjeta {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.tutoria-tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el nombre de la tutoría */
+.tutoria-tarjeta h3 {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los detalles de la tutoría */
+.tutoria-tarjeta p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Estilo para el mensaje de ya inscrito */
+.tutoria-tarjeta .already-subscribed {
+  color: #d9534f;
+  font-style: italic;
+}

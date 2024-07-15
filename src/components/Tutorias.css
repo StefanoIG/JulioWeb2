@@ -1,0 +1,66 @@
+/* Tutorias.css 
+
+
+/* Mejora del contenedor de tutorías para ocupar todo el ancho y tener un padding uniforme */
+.tutorias {
+  padding: 2rem;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Mejora del contenido principal para centrarlo y agregar sombra para profundidad */
+.tutorias-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid mejorado para responsividad y espaciado */
+.tutorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Mejoras en las tarjetas de tutoría para una mejor visualización */
+.tutoria-tarjeta {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutoria-tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Estilos para el nombre de la tutoría y botones para mejorar la accesibilidad y estética */
+.tutoria-name {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tutoria-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tutoria-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para el mensaje de ya inscrito, haciéndolo más notorio */
+.already-subscribed {
+  color: #d9534f;
+  font-style: italic;
+}
