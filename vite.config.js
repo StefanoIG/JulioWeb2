@@ -17,5 +17,10 @@ export default defineConfig({
                 Tutorias: resolve(__dirname, 'src/components/Tutorias.jsx'),
             }
         }
-    }
+    },
+    resolve: {
+      alias: {
+          '@': resolve(__dirname, 'src'),
+      },
+  },
 });
